@@ -14,3 +14,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#Ingnore rvmc file
+.rvmrc
+
+
+#Ignore public/uploads directory
+public/uploads
