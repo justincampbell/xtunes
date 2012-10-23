@@ -7,6 +7,9 @@ gem 'rails', '3.2.8'
 
 gem 'pg'
 gem 'carrierwave'
+gem 'fog'
+gem 'foreman'
+gem 'thin'
 
 
 # Gems used only for assets and not required
