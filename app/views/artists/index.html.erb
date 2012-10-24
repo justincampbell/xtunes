@@ -9,7 +9,7 @@
 <% @artists.each do |artist| %>
   <tr>
     <td><%= artist.name %></td>
-    <td><%= artist.price %></td>
+    <td><%= artist.bio %></td>
     <td><%= link_to 'Show', artist %></td>
 
     <td><%= link_to 'Edit', edit_artist_path(artist) %></td>

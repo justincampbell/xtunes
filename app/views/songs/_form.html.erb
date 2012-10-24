@@ -8,6 +8,10 @@
     <%= f.label :price %><br />
     <%= f.text_field :price %>
   </div>
+  <div class="field">
+  <%= f.label :artist %><br />
+  <%= f.select :artist, Artist.all.map { |a| [a.name, a.id] } %>
+</div>
     <div class="field">
     <%= f.label :audiofile %><br />
     <%= f.file_field :audiofile %>
