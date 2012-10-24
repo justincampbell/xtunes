@@ -10,9 +10,12 @@
   </div>
   <div class="field">
   <%= f.label :artist %><br />
-  <%= f.select :artist, Artist.all.map { |a| [a.name, a.id] } %>
-</div>
-    <div class="field">
+  <%= f.select :artist, Artist.all.map { |a| [a.name] } %>
+  <div class="field">
+  <%= f.label :album %><br />
+  <%= f.select :album, Album.all.map { |a| [a.name] } %>
+  </div>
+  <div class="field">
     <%= f.label :audiofile %><br />
     <%= f.file_field :audiofile %>
   </div>
