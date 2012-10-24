@@ -18,6 +18,12 @@
 #Ingnore rvmc file
 .rvmrc
 
+#Ignore env
+.env
+
+#Ignore procfile
+Procfile
+
 
 #Ignore public/uploads directory
 public/uploads
