@@ -16,6 +16,10 @@
   <%= f.select :album, Album.all.map { |a| [a.name] } %>
   </div>
   <div class="field">
+  <%= f.label :genre %><br />
+  <%= f.select :genre, Genre.all.map { |a| [a.name] } %>
+  </div>
+  <div class="field">
     <%= f.label :audiofile %><br />
     <%= f.file_field :audiofile %>
   </div>

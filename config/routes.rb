@@ -4,6 +4,7 @@ Xtunes::Application.routes.draw do
   resources :songs
   resources :artists
   resources :albums
+  resources :genres
 
 
   # You can have the root of your site routed with "root"
