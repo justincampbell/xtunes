@@ -8,6 +8,7 @@ Xtunes::Application.routes.draw do
   resources :purchases
   resources :users
 
+
   resources :home do
     get 'song'
   end
