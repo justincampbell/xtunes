@@ -14,7 +14,7 @@ class PurchasesController < ApplicationController
     @purchase = Purchase.new(params[:purchase])
     @purchase.user = User.first
     if @purchase.save
-      redirect_to purchases_path, notice: 'Song was successfully purchased.'
+      redirect_to root_path, notice: 'Song was successfully purchased.'
     else
       render action: "new"
     end
