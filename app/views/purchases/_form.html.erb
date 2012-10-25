@@ -1,8 +1,10 @@
+<%= @song.name %> <br />
 <%= form_for(@purchase) do |f| %>
   <div class="field">
     <%= f.label :price %><br />
     <%= f.text_field :price %>
   </div>
+  <%= f.hidden_field :song_id %>
 
   <div class="actions">
     <%= f.submit %>

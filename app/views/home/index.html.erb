@@ -23,9 +23,7 @@
     <td><%= song.genre %></td>
     <td><%= link_to song.name, song_path(song)%></td>
     <td><%= check_box_tag 'Purchase'%>
-    <td><%= link_to "Purchase", new_purchase_path(song) %><td>
-
-
+    <td><%= link_to "Purchase", new_song_purchase_path(song) %><td>
 
   </tr>
 <% end %>

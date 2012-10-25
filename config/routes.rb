@@ -7,7 +7,9 @@ Xtunes::Application.routes.draw do
   resources :purchases
   resources :users
 
-  resources :songs
+  resources :songs do
+    resources :purchases
+  end
 
 
   resources :home do
