@@ -7,6 +7,7 @@ Xtunes::Application.routes.draw do
   resources :purchases
   resources :users
 
+
   resources :songs do
     resources :purchases
   end
@@ -17,6 +18,9 @@ Xtunes::Application.routes.draw do
   end
 
   root :to => 'home#index'
+
+  resources :sessions
+  get 'login' => 'sessions#new'
 
 
   # You can have the root of your site routed with "root"

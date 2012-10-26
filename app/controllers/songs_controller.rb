@@ -1,7 +1,14 @@
 class SongsController < ApplicationController
 
     def index
-      @songs = Song.all
+      if admin_user?
+       @songs = Song.all
+      else
+        redirect_to login_path
+    end
+
+    def admin_user?
+      false
     end
 
     def new
@@ -9,7 +16,6 @@ class SongsController < ApplicationController
     end
 
     def create
-
       @song = Song.new(params[:song])
         if @song.save
           redirect_to songs_path, notice: 'Song was successfully created.'

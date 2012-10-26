@@ -1,0 +1,15 @@
+<%= form_for(:sessions. url) do |f| %>
+
+  <div class='field'>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  </div>
+
+  <div class='field'>
+  <%= f.label :password %>
+  <%= f.email_field :password %>
+  </div>
+
+  <%= f.submit %>
+
+<% end %>
