@@ -5,6 +5,7 @@ class SongsController < ApplicationController
        @songs = Song.all
       else
         redirect_to login_path
+      end
     end
 
     def admin_user?
