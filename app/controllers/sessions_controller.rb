@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def create
-    @current_uswer
+    @current_user
   end
 
   def new

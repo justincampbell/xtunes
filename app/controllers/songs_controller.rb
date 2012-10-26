@@ -9,7 +9,7 @@ class SongsController < ApplicationController
     end
 
     def admin_user?
-      false
+      current_user.present?
     end
 
     def new
