@@ -1,34 +1,24 @@
-<p id="notice"><%= notice %></p>
 
-<p>
+
+<div class="song">
   <b>Name:</b>
   <%= @song.name %>
-</p>
-
-<p>
+  <br>
   <b>Artist:</b>
   <%= @song.artist %>
-</p>
-
-<p>
+  <br>
   <b>Genre:</b>
   <%= @song.genre %>
-</p>
-
-<p>
+  <br>
   <b>Album:</b>
   <%= @song.album %>
-</p>
-
-<p>
+  <br>
   <b>Price:</b>
   <%= @song.price %>
-</p>
-
-<p>
+  <br>
   <b>Audiofile:</b>
   <%= @song.audiofile %>
-</p>
+</div>
 
 
 <%= link_to 'Edit', edit_song_path(@song) %> |

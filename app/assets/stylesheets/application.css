@@ -9,7 +9,89 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require 'reset.css'
- *= require 'css/bootstrap.css'
+ *= require 'bootstrap.css'
  *= require_self
  *= require_tree .
  */
+
+ .content {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #393939;
+    font-size: 16px;
+    padding: 10px;
+}
+img {
+    max-width: 100%;
+}
+a {
+    white-space: nowrap;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+.page-header {
+    padding-bottom: 0;
+    color: #393939;
+    font-family: Arial, sans-serif;
+}
+
+.page-header h1 {
+    font: 38px/57px Arial, sans-serif;
+}
+.page-header a {
+    color: #393939;
+}
+.page-header a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.navbar div.brand{
+    text-align: center;
+    width: 100%;
+    margin: 36px 0 42px 0;
+    float: none;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    color: #393939;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 10px 0px 12px 0;
+    text-decoration: none;
+    text-shadow: none;
+    margin-right: 32px;
+}
+
+.song {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 12px;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ddd;
+    margin-top: 35px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 12px;
+}

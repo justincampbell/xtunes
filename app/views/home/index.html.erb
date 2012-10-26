@@ -1,30 +1,387 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travels</title>
+    <meta name="description" content="Responsive example integrating Twitter Bootstrap and jQuery Masonry">
+    <meta name="author" content="Maurizio Conventi">
 
-  <h1>XTUNES</h1>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<table>
-  <tr>
-    <th>Song</th>
-    <th>Artist</th>
-    <th>Album</th>
-    <th>Price</th>
-    <th>Genre</th>
-    <th>More Info</th>
-    <th>Purchase</th>
-    <th>Buy</th>
+    <!-- Le styles -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" />
+</head>
 
-  </tr>
+  <body>
 
-<% @songs.each do |song| %>
-  <tr>
-    <td><%= song.name %></td>
-    <td><%= song.artist %></td>
-    <td><%= song.album %></td>
-    <td><%= song.price %></td>
-    <td><%= song.genre %></td>
-    <td><%= link_to song.name, song_path(song)%></td>
+        <div class="container">
+            <div id="page-header" class="navbar page-header">
+                    <div class="brand">
+                        <div>
+                            <h1><a href="#" class="home" >Xtunes</a></h1>
+                            <small>Get you tunes</small>
+                        </div>
+                    </div>
+                <div id="navbar" class="container visible-desktop">
+                    <div class="nav-collapse">
+                        <ul id="nav" class="nav">
+                        <li><%= link_to "Home", root_path %></li>
+                        <li><%= link_to "Songs", songs_path %></li>
+                        <li><%= link_to "Artists", artists_path %></li>
+                        <li><%= link_to "Albums", albums_path %></li>
+                        <li><%= link_to "Genres", genres_path %></li>
+                         <li><%= link_to "Contact Us" %></li>
+                        <li><%= link_to "Cart" %></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+            <% @songs.each do |song| %>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+                  <div class="song">
+                    <%= song.name %>
+                    <br>
+                    <b>Artist:</b>
+                    <%= song.artist %>
+                    <br>
+                    <b>Genre:</b>
+                    <%= song.genre %>
+                    <br>
+                    <b>Album:</b>
+                    <%= song.album %>
+                    <br>
+                    <b>Price:</b>
+                    <%= song.price %>
+                    <br>
+                    <b>Audiofile:</b>
+                    <%= song.audiofile %>
+                  </div>
+            </div>
+
     <td><%= check_box_tag 'Purchase'%>
     <td><%= link_to "Purchase", new_song_purchase_path(song) %><td>
-
-  </tr>
 <% end %>
-</table>
+
+<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.masonry.min.js"></script>
+    <script src="js/base.js" type="text/javascript"></script>
+
+
+</body></html>
