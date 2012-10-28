@@ -6,9 +6,12 @@ Xtunes::Application.routes.draw do
   resources :genres
   resources :purchases
 
-  get "sign_up" => "users#new", :as => "sign_up"
-  root :to => "user#new"
+  get "logout" => "sessions#destroy", :as => "logout"
+  get "login" => "sessions#new", :as => "login"
+  get "signup" => "users#new", :as => "signup"
+
   resources :users
+  resources :sessions
 
   resources :songs do
     resources :purchases
@@ -20,11 +23,4 @@ Xtunes::Application.routes.draw do
 
   root :to => 'home#index'
 
-  resources :sessions
-  get 'login' => 'sessions#new'
-
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 end

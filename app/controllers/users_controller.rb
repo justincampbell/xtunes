@@ -9,13 +9,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to root_url, :notice => "Signed up!"
+      session[:user_id] = @user.id
+      redirect_to login_url, :notice => "Thank you for signing up!"
     else
       render "new"
     end
-  end
-
-  def create
   end
 
   def show
