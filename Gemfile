@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'thin'
 gem 'bootstrap-sass'
+gem "bcrypt-ruby"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
