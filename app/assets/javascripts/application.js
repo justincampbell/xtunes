@@ -17,5 +17,5 @@
 //= require script.js
 //= require jquery.ba-hashchange.min.js
 //= require_self
-//= require_tree .
+
 
