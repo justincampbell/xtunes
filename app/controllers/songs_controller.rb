@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+    load_and_authorize_resource
 
     def index
       if admin_user?
@@ -23,7 +24,7 @@ class SongsController < ApplicationController
         else
           render action: "new"
         end
-      end
+    end
 
     def show
     @song = Song.find(params[:id])
@@ -37,7 +38,6 @@ class SongsController < ApplicationController
 
     def update
       @song = Song.find(params[:id])
-
       if @song.update_attributes(params[:song])
         redirect_to songs_path
       else

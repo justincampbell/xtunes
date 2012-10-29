@@ -9,6 +9,7 @@ gem 'pg'
 gem 'thin'
 gem 'bootstrap-sass'
 gem "bcrypt-ruby"
+gem "cancan"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

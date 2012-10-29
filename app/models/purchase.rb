@@ -12,9 +12,10 @@
 
 class Purchase < ActiveRecord::Base
   attr_accessible :price, :song_id
+  attr_accessor :name
   belongs_to :user
   belongs_to :song
 
-  validates :user, :song, :price, :presence => true
+  validates :user, :song, :name, :price, :presence => true
 
 end
