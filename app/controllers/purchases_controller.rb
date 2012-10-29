@@ -1,7 +1,7 @@
 class PurchasesController < ApplicationController
 
   def index
-    @purchases = Purchase.all
+    @purchases = current_user.purchases
   end
 
   def new
